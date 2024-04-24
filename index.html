@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Takaran Gizi</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="mt-4">Form</h2>
+      <form id="dataForm">
+        <div>
+          <label for="usia">Usia</label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control col-sm-9"
+              id="autoSizingInputGroup"
+              placeholder="Usia"
+            />
+            <select class="form-control col-sm">
+              <option value="tahun">Tahun</option>
+              <option value="bulan">Bulan</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="gender">Jenis Kelamin</label>
+          <select
+            class="form-control"
+            id="gender"
+            name="gender"
+            onchange="showConditions()"
+            required
+          >
+            <option value="">-</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </div>
+        <div class="form-group" id="condition1" style="">
+          <label for="condition1">Kondisi Khusus</label>
+          <select class="form-control" id="condition1" name="condition1">
+            <option value="">-</option>
+            <option value="pregnant">Hamil</option>
+            <option value="breastfeeding">Menyusui</option>
+            <option value="neither">Tidak Keduanya</option>
+          </select>
+        </div>
+        <div class="form-group" id="condition2" style="">
+          <label for="condition2">Keterangan</label>
+          <select class="form-control" id="condition2" name="condition2">
+            <option value="condition2_option1">-</option>
+            <option value="condition2_option1">Pilihan 1</option>
+            <option value="condition2_option2">Pilihan 2</option>
+            <!-- Tambahkan opsi tambahan di sini jika diperlukan -->
+          </select>
+        </div>
+        <button
+          type="button"
+          id="disabledInput"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+          onclick="submitForm()"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <!-- Modal -->
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Nutrition Table
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-target="#staticBackdrop"
+              data-bs-toggle="modal"
+              disabled
+            >
+              Prev
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-target="#staticBackdrop2"
+              data-bs-toggle="modal"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 1 Tutup -->
+    <!-- Modal 2 -->
+    <div
+      class="modal fade"
+      id="staticBackdrop2"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Vitamin Table
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-target="#staticBackdrop"
+              data-bs-toggle="modal"
+            >
+              Prev
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-target="#staticBackdrop3"
+              data-bs-toggle="modal"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 Tutup -->
+    <!-- Modal 3 -->
+    <div
+      class="modal fade"
+      id="staticBackdrop3"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Mineral Table
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-target="#staticBackdrop2"
+              data-bs-toggle="modal"
+            >
+              Prev
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-target="#staticBackdrop"
+              data-bs-toggle="modal"
+              disabled
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3 Tutup -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showConditions() {
+        var gender = document.getElementById("gender").value;
+        var condition1Div = document.getElementById("condition1");
+        var condition2Div = document.getElementById("condition2");
+
+        <!-- if (gender === "female") {
+          condition1Div.style.display = "block";
+          condition2Div.style.display = "none";
+        } else {
+          condition1Div.style.display = "none";
+          condition2Div.style.display = "block";
+        } -->
+      }
+
+      function submitForm() {
+        var form = document.getElementById("dataForm");
+        var formData = new FormData(form);
+        var jsonData = {};
+
+        formData.forEach(function (value, key) {
+          jsonData[key] = value;
+        });
+
+        var url = "URL_API_ANDA"; // Ganti URL_API_ANDA dengan URL API yang sesuai
+
+        fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(jsonData),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // Lakukan sesuatu dengan respons dari API
+            console.log(data);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+    </script>
+  </body>
+</html>
