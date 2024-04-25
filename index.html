@@ -13,55 +13,145 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container bg-primary" style="--bs-bg-opacity: 0.2">
       <h2 class="mt-4">Form</h2>
-      <form id="dataForm">
-        <div>
-          <label for="usia">Usia</label>
-          <div class="input-group">
+      <form>
+        <div class="row mb-3">
+          <label for="usia" class="col-sm-2 col-form-label">Usia</label>
+          <div class="col-sm-6">
             <input
               type="text"
-              class="form-control col-sm-9"
-              id="autoSizingInputGroup"
+              class="form-control"
+              id="usia"
               placeholder="Usia"
             />
+          </div>
+          <div class="col-sm-4">
             <select class="form-control col-sm">
-              <option value="tahun">Tahun</option>
+              <option selected value="tahun">Tahun</option>
               <option value="bulan">Bulan</option>
             </select>
           </div>
         </div>
-        <div class="form-group">
-          <label for="gender">Jenis Kelamin</label>
-          <select
-            class="form-control"
-            id="gender"
-            name="gender"
-            onchange="showConditions()"
-            required
+        <div class="row mb-3">
+          <label id="gender" for="gender" class="col-sm-2 col-form-label"
+            >Jenis Kelamin</label
           >
-            <option value="">-</option>
-            <option value="Laki-laki">Laki-laki</option>
-            <option value="Perempuan">Perempuan</option>
-          </select>
+          <div class="col-sm-10">
+            <select
+              class="form-control"
+              id="gender"
+              name="gender"
+              onchange="showConditions()"
+              required
+            >
+              <option selected>-</option>
+              <option value="Laki-laki">Laki-laki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+          </div>
         </div>
-        <div class="form-group" id="condition1" style="">
-          <label for="condition1">Kondisi Khusus</label>
-          <select class="form-control" id="condition1" name="condition1">
-            <option value="">-</option>
-            <option value="pregnant">Hamil</option>
-            <option value="breastfeeding">Menyusui</option>
-            <option value="neither">Tidak Keduanya</option>
-          </select>
+        <div class="row mb-3">
+          <label id="gender" for="gender" class="col-sm-2 col-form-label"
+            >Jenis Kelamin</label
+          >
+          <div class="col-sm-10">
+            <select
+              class="form-control"
+              id="gender"
+              name="gender"
+              onchange="showConditions()"
+              required
+            >
+              <option selected>-</option>
+              <option value="Laki-laki">Laki-laki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+          </div>
         </div>
-        <div class="form-group" id="condition2" style="">
-          <label for="condition2">Keterangan</label>
-          <select class="form-control" id="condition2" name="condition2">
-            <option value="condition2_option1">-</option>
-            <option value="condition2_option1">Pilihan 1</option>
-            <option value="condition2_option2">Pilihan 2</option>
-            <!-- Tambahkan opsi tambahan di sini jika diperlukan -->
-          </select>
+        <div class="row mb-3">
+          <label id="gender" for="gender" class="col-sm-2 col-form-label"
+            >Kondisi Khusus</label
+          >
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="tidak-keduanya"
+              />
+              <label class="form-check-label" for="inlineRadio1"
+                >Tidak Keduanya</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="hamil"
+              />
+              <label class="form-check-label" for="inlineRadio2">Hamil</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio3"
+                value="menyusui"
+              />
+              <label class="form-check-label" for="inlineRadio3"
+                >Menyusui</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label id="gender" for="gender" class="col-sm-2 col-form-label"
+            >Keterangan</label
+          >
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="Trimester 1"
+              />
+              <label class="form-check-label" for="inlineRadio1"
+                >Trimester I</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="hamil"
+              />
+              <label class="form-check-label" for="inlineRadio2"
+                >Trimester II</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio3"
+                value="menyusui"
+              />
+              <label class="form-check-label" for="inlineRadio3"
+                >Trimester III</label
+              >
+            </div>
+          </div>
         </div>
         <button
           type="button"
@@ -100,7 +190,38 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td scope="row">Energi</td>
+                    <td id="energi">...</td>
+                    <td scope="row">Protein</td>
+                    <td id="protein">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Total Lemak</td>
+                    <td id="total_lemak">...</td>
+                    <td scope="row">Karbohidrat</td>
+                    <td id="karbohidrat">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Omega 3</td>
+                    <td id="omega3">...</td>
+                    <td scope="row">Omega 6</td>
+                    <td id="omega6">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Serat</td>
+                    <td id="serat">...</td>
+                    <td scope="row">Air</td>
+                    <td id="air">...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -147,7 +268,56 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td scope="row">Vitamin A</td>
+                    <td id="vitA">...</td>
+                    <td scope="row">Vitamin D</td>
+                    <td id="vitD">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Vitamin E</td>
+                    <td id="vitE">...</td>
+                    <td scope="row">Vitamin K</td>
+                    <td id="vitK">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Vitamin B1</td>
+                    <td id="vitB1">...</td>
+                    <td scope="row">Vitamin B2</td>
+                    <td id="vitB2">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Vitamin B3</td>
+                    <td id="vitB3">...</td>
+                    <td scope="row">Vitamin B5</td>
+                    <td id="vitB5">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Vitamin B6</td>
+                    <td id="vitB6">...</td>
+                    <td scope="row">Vitamin B12</td>
+                    <td id="vitB12">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Folat</td>
+                    <td id="folat">...</td>
+                    <td scope="row">Biotin</td>
+                    <td id="Biotin">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Kolin</td>
+                    <td id="kolin">...</td>
+                    <td scope="row">Vitamin C</td>
+                    <td id="vitC">...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -193,7 +363,56 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td scope="row">Kalsium</td>
+                    <td id="kalsium">...</td>
+                    <td scope="row">Fosfor</td>
+                    <td id="fosfor">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Magnesium</td>
+                    <td id="magnesium">...</td>
+                    <td scope="row">Besi</td>
+                    <td id="besi">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Iodium</td>
+                    <td id="iodium">...</td>
+                    <td scope="row">Seng</td>
+                    <td id="seng">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Selenium</td>
+                    <td id="selenium">...</td>
+                    <td scope="row">Mangan</td>
+                    <td id="mangan">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Flour</td>
+                    <td id="flour">...</td>
+                    <td scope="row">Kromium</td>
+                    <td id="kromium">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Kalium</td>
+                    <td id="kalium">...</td>
+                    <td scope="row">Natrium</td>
+                    <td id="natrium">...</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Klor</td>
+                    <td id="klor">...</td>
+                    <td scope="row">Tembaga</td>
+                    <td id="tembaga">...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
