@@ -14,12 +14,10 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body class="px-auto">
-    <header>
-      <nav
-        class="navbar navbar-expand-lg bg-body-tertiary bd-navbar sticky-top px-lg-5"
-      >
+    <header class="">
+      <nav class="navbar navbar-expand-lg bd-navbar sticky-top px-lg-5 mx-lg-5">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand text-light" href="#">Navbar</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -29,31 +27,52 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon text-light"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link text-light" href="#">Link</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+
+            <!-- Button trigger modal Searching-->
+            <button
+              class="btn btn-search btn-outline-light text-light"
+              data-bs-target="#exampleModal"
+              data-bs-toggle="modal"
+            >
+              <div class="label-search col">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+                <span>Search</span>
+              </div>
+
+              <div
+                class="shortcut-search align-items-center rounded-1 border border-0"
+              >
+                <span class="" style="font-size: 0.5rem">CTRL</span>
+                <span class="">F</span>
+              </div>
+            </button>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -61,7 +80,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
-                    fill="currentColor"
+                    fill="white"
                     class="bi bi-github"
                     viewBox="0 0 16 16"
                   >
@@ -73,7 +92,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle text-light"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -81,7 +100,7 @@
                 >
                   Dropdown
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu text-light">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -96,6 +115,86 @@
       </nav>
     </header>
     <div class="container" style="">
+      <div class="main-page"></div>
+      <div class="">
+        <h1 class="">HEHEHEHEHE</h1>
+        <div class="card-container row justify-content-around">
+          <div class="card col-sm-3">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+              <h5 class="card-title">Nutrition</h5>
+              <p class="card-text">
+                Involves the intake of essential nutrients like carbohydrates,
+                proteins, fats, vitamins, minerals, and water, crucial for
+                sustaining life and promoting bodily functions. Making informed
+                choices about food ensures a balanced diet tailored to
+                individual needs, supporting growth, development, and overall
+                well-being.
+              </p>
+              <div class="btn-group dropup">
+                <button
+                  type="button"
+                  class="btn btn-secondary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropup
+                </button>
+                <ul class="dropdown-menu p-3">
+                  <table class="table-card">
+                    <tbody>
+                      <tr>
+                        <td scope="row">Energi</td>
+                        <td scope="row">Protein</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Total Lemak</td>
+                        <td scope="row">Karbohidrat</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Omega 3</td>
+                        <td scope="row">Omega 6</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Serat</td>
+                        <td scope="row">Air</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card col-sm-3">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+              <h5 class="card-title">Vitamin</h5>
+              <p class="card-text">
+                Organic compounds vital for physiological processes, play
+                critical roles in metabolism, immune function, and cell growth.
+                Classified into fat-soluble and water-soluble types, they are
+                sourced from various foods and their deficiency or excess intake
+                can impact health significantly.
+              </p>
+              <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card col-sm-3">
+            <h5 class="card-header">Featured</h5>
+            <div class="card-body">
+              <h5 class="card-title">Mineral</h5>
+              <p class="card-text">
+                Inorganic substances necessary for body functions, contribute to
+                bone health, muscle function, and nerve transmission. Classified
+                as macrominerals and trace minerals, they are obtained from
+                diverse food sources and are essential for preventing nutrient
+                deficiencies and supporting overall health.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="form-container">
         <h2 class="mt-4">Form</h2>
         <form>
@@ -221,7 +320,7 @@
           <button
             type="button"
             id="disabledInput"
-            class="btn btn-primary"
+            class="btn btn-warning"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
             onclick="submitForm()"
@@ -233,6 +332,50 @@
     </div>
 
     <!-- Modal -->
+
+    <!-- Modal Searching-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="10"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <form action="" class="d-flex col form-search mx-auto px-2 py-2">
+              <label for="" class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#2d9596"
+                  class="bi bi-search me-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </label>
+              <input
+                type="text"
+                class="form-input-search col-sm-11"
+                id="specificSizeInputGroupUsername"
+                placeholder="Search tips"
+              />
+            </form>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer d-flex justify-content-end">
+            <span>Generated by me.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Searching Tutup -->
+
     <!-- Modal 1 -->
     <div
       class="modal fade"
