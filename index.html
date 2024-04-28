@@ -13,8 +13,14 @@
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
-  <body class="px-auto">
-    <header class="">
+  <body class="px-auto font-monospace">
+    <div class="first-page pb-5 row align-items-end">
+      <a href="#header" class="slogan">
+        <h1 class="">This website is built to calculate your daily needs.</h1>
+        <h2>No kidding</h2>
+      </a>
+    </div>
+    <header id="header" class="py-1 bg-cs-primary">
       <nav class="navbar navbar-expand-lg bd-navbar sticky-top px-lg-5 mx-lg-5">
         <div class="container-fluid">
           <a class="navbar-brand text-light" href="#">Navbar</a>
@@ -47,6 +53,7 @@
             <!-- Button trigger modal Searching-->
             <button
               class="btn btn-search btn-outline-light text-light"
+              id="btn-search"
               data-bs-target="#exampleModal"
               data-bs-toggle="modal"
             >
@@ -104,7 +111,7 @@
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li>
+                  <li class="">
                     <a class="dropdown-item" href="#">Something else here</a>
                   </li>
                 </ul>
@@ -116,11 +123,11 @@
     </header>
     <div class="container" style="">
       <div class="main-page"></div>
-      <div class="">
+      <div class="m-4">
         <h1 class="">HEHEHEHEHE</h1>
-        <div class="card-container row justify-content-around">
-          <div class="card col-sm-3">
-            <h5 class="card-header">Featured</h5>
+        <div class="card-container row row-1 g-5 justify-content-around">
+          <div class="card col-12 col-lg-3 card-cs">
+            <h4 class="card-header card-header-cs">Featured</h4>
             <div class="card-body">
               <h5 class="card-title">Nutrition</h5>
               <p class="card-text">
@@ -131,7 +138,7 @@
                 individual needs, supporting growth, development, and overall
                 well-being.
               </p>
-              <div class="btn-group dropup">
+              <div class="btn-group dropup button-cover">
                 <button
                   type="button"
                   class="btn btn-secondary dropdown-toggle"
@@ -165,8 +172,8 @@
               </div>
             </div>
           </div>
-          <div class="card col-sm-3">
-            <h5 class="card-header">Featured</h5>
+          <div class="card col-12 col-lg-3 card-cs">
+            <h4 class="card-header card-header-cs">Featured</h4>
             <div class="card-body">
               <h5 class="card-title">Vitamin</h5>
               <p class="card-text">
@@ -176,11 +183,55 @@
                 sourced from various foods and their deficiency or excess intake
                 can impact health significantly.
               </p>
-              <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+
+              <div class="btn-group dropup mt-4 button-cover">
+                <button
+                  type="button"
+                  class="btn btn-secondary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropup
+                </button>
+                <ul class="dropdown-menu p-3">
+                  <table class="table-card">
+                    <tbody>
+                      <tr>
+                        <td scope="row">Vitamin A</td>
+                        <td scope="row">Vitamin D</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Vitamin E</td>
+                        <td scope="row">Vitamin K</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Vitamin B1</td>
+                        <td scope="row">Vitamin B2</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Vitamin B3</td>
+                        <td scope="row">Vitamin B5</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Vitamin B6</td>
+                        <td scope="row">Vitamin B12</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Folat</td>
+                        <td scope="row">Biotin</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Kolin</td>
+                        <td scope="row">Vitamin C</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="card col-sm-3">
-            <h5 class="card-header">Featured</h5>
+          <div class="card col-12 col-lg-3 card-cs">
+            <h4 class="card-header card-header-cs">Featured</h4>
             <div class="card-body">
               <h5 class="card-title">Mineral</h5>
               <p class="card-text">
@@ -190,13 +241,44 @@
                 diverse food sources and are essential for preventing nutrient
                 deficiencies and supporting overall health.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="btn-group dropup button-cover">
+                <button
+                  type="button"
+                  class="btn btn-secondary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropup
+                </button>
+                <ul class="dropdown-menu p-3">
+                  <table class="table-card">
+                    <tbody>
+                      <tr>
+                        <td scope="row">Energi</td>
+                        <td scope="row">Protein</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Total Lemak</td>
+                        <td scope="row">Karbohidrat</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Omega 3</td>
+                        <td scope="row">Omega 6</td>
+                      </tr>
+                      <tr>
+                        <td scope="row">Serat</td>
+                        <td scope="row">Air</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="form-container">
-        <h2 class="mt-4">Form</h2>
+      <div class="form-container mx-auto p-4 rounded-3">
+        <h2 class="">Form</h2>
         <form>
           <div class="row mb-3">
             <label for="usia" class="col-sm-2 col-form-label">Usia</label>
@@ -317,16 +399,18 @@
               </div>
             </div>
           </div>
-          <button
-            type="button"
-            id="disabledInput"
-            class="btn btn-warning"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-            onclick="submitForm()"
-          >
-            Submit
-          </button>
+          <div class="btn-group btn-cs">
+            <button
+              type="button"
+              id="disabledInput"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              onclick="submitForm()"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>
