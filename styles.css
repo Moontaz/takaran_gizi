@@ -15,8 +15,9 @@ body {
   display: grid;
   /* color: rgb(255, 255, 255); */
   background-color: #f3f3f3;
-  max-width: 100rem;
+  max-width: 2040px;
   margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
