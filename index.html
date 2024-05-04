@@ -14,8 +14,10 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body class="font-monospace">
-    <header id="header" class="py-1 bg-cs-primary">
-      <nav class="navbar navbar-expand-lg bd-navbar sticky-top px-lg-5 mx-lg-5">
+    <header id="header" class="py-1 fixed-top">
+      <nav
+        class="navbar navbar-expand-lg bd-navbar sticky-top px-2 mx-2 px-lg-5 mx-lg-5"
+      >
         <div class="container-fluid">
           <a class="navbar-brand text-light" href="#">Navbar</a>
           <div class="navbar-toggler row row-2">
@@ -83,7 +85,7 @@
               ></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-lg-0">
                 <li class="nav-item nav-hover rounded">
                   <a
                     class="nav-link active text-light"
@@ -224,7 +226,13 @@
       </nav>
     </header>
     <div class="container">
-      <div class="main-page"></div>
+      <div class="main-page">
+        <div class="tagline text-center">
+          <span class="fs-1">This website can calculate your daily needs.</span>
+          <br />
+          <span class="fs-2">No kidding</span>
+        </div>
+      </div>
       <div class="m-4">
         <h1 class="">HEHEHEHEHE</h1>
         <div class="card-container row row-1 g-5 justify-content-around">
