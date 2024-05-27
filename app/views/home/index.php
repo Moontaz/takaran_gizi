@@ -277,10 +277,10 @@
         <div class="row mb-3">
           <label for="usia" class="col-sm-2 col-form-label">Usia</label>
           <div class="col-sm-6">
-            <input type="text" class="form-control" id="usia" name="usia" placeholder="e.g. 5" />
+            <input type="text" class="form-control" id="usia" name="usia" placeholder="e.g. 5" required/>
           </div>
           <div class="col-sm-4">
-            <select class="form-control col-sm" size="1" id="tahunOrBulan" name="tahunOrBulan">
+            <select class="form-control col-sm" size="1" id="tahunOrBulan" name="tahunOrBulan" required>
               <option selected value="tahun">Tahun</option>
               <option value="bulan">Bulan</option>
             </select>
@@ -554,8 +554,10 @@
       formData.append("usia", usia);
       formData.append("tahunOrBulan", tahunOrBulan);
       formData.append("gender", gender);
-      formData.append("hamilMenyusui", kondisiKhusus);
-      formData.append("umur", umurHamilOrMenyusui);
+      if (kondisiKhusus && umurHamilOrMenyusui) {
+        formData.append("hamilMenyusui", kondisiKhusus);
+        formData.append("umur", umurHamilOrMenyusui);
+      }
 
       var xhr = new XMLHttpRequest();
       xhr.open("POST", "<?= BASEURL; ?>/home/find", true);
@@ -564,6 +566,48 @@
           if (xhr.status === 200) {
             try {
               var responseData = JSON.parse(xhr.responseText);
+              // tabel 1
+              document.getElementById("energi").innerText = responseData.tabel1.energi + " kkal";
+              document.getElementById("protein").innerText = responseData.tabel1.protein + " g";
+              document.getElementById("total_lemak").innerText = responseData.tabel1.total_lemak + " g";
+              document.getElementById("karbohidrat").innerText = responseData.tabel1.karbohidrat + " g";
+              document.getElementById("omega3").innerText = responseData.tabel1.omega3 + " g";
+              document.getElementById("omega6").innerText = responseData.tabel1.omega6 + " g";
+              document.getElementById("serat").innerText = responseData.tabel1.serat + " g";
+              document.getElementById("air").innerText = responseData.tabel1.air + " ml";
+
+              // tabel 2
+              document.getElementById("vitA").innerText = responseData.tabel2.vitA + " RE";
+              document.getElementById("vitD").innerText = responseData.tabel2.vitD + " mcg";
+              document.getElementById("vitE").innerText = responseData.tabel2.vitE + " mcg";
+              document.getElementById("vitK").innerText = responseData.tabel2.vitK + " mcg";
+              document.getElementById("vitB1").innerText = responseData.tabel2.vitB1 + " mg";
+              document.getElementById("vitB2").innerText = responseData.tabel2.vitB2 + " mg";
+              document.getElementById("vitB3").innerText = responseData.tabel2.vitB3 + " mg";
+              document.getElementById("vitB5").innerText = responseData.tabel2.vitB5 + " mg";
+              document.getElementById("vitB6").innerText = responseData.tabel2.vitB6 + " mg";
+              document.getElementById("vitB12").innerText = responseData.tabel2.vitB12 + " mcg";
+              document.getElementById("folat").innerText = responseData.tabel2.folat + " mcg";
+              document.getElementById("Biotin").innerText = responseData.tabel2.biotin + " mcg";
+              document.getElementById("kolin").innerText = responseData.tabel2.kolin + " mg";
+              document.getElementById("vitC").innerText = responseData.tabel2.vitC + " mg";
+
+              // tabel 3
+              document.getElementById("kalsium").innerText = responseData.tabel3.kalsium + " mg";
+              document.getElementById("fosfor").innerText = responseData.tabel3.fosfor + " mg";
+              document.getElementById("magnesium").innerText = responseData.tabel3.magnesium + " mcg";
+              document.getElementById("besi").innerText = responseData.tabel3.besi + " mg";
+              document.getElementById("iodium").innerText = responseData.tabel3.iodium + " mcg";
+              document.getElementById("seng").innerText = responseData.tabel3.seng + " mg";
+              document.getElementById("tembaga").innerText = responseData.tabel3.tembaga + " mcg";
+              document.getElementById("flour").innerText = responseData.tabel3.fluor + " mg";
+              document.getElementById("kromium").innerText = responseData.tabel3.kromium + " mcg";
+              document.getElementById("kalium").innerText = responseData.tabel3.kalium + " mg";
+              document.getElementById("natrium").innerText = responseData.tabel3.natrium + " mg";
+              document.getElementById("klor").innerText = responseData.tabel3.klor + " mg";
+              document.getElementById("selenium").innerText = responseData.tabel3.selenium + " mcg";
+              document.getElementById("mangan").innerText = responseData.tabel3.mangan + " mg";
+
               console.log(responseData);
             } catch (error) {
               console.error('Error parsing JSON:', error);
