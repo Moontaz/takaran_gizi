@@ -127,9 +127,11 @@
   <div class="container">
     <div class="main-page">
       <div class="tagline text-center">
-        <span class="fs-1">This website can calculate your daily needs.</span>
+        <span class="fs-1">Kebutuhan Gizi Harian</span>
         <br />
-        <span class="fs-2">No kidding</span>
+        <span class="fs-2">Website ini adalah sebuah layanan yang dirancang untuk membantu pengguna menghitung kebutuhan gizi harian mereka berdasarkan usia, jenis kelamin, dan kondisi khusus seperti kehamilan atau menyusui sesuai dengan <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019" class="text-decoration-none text-black" target="blank">Permenkes No. 28 Tahun 2019</a>. Dengan mengisi formulir yang disediakan, pengguna dapat dengan mudah memperoleh informasi tentang kebutuhan gizi mereka untuk menjaga kesehatan dan kesejahteraan mereka.</span>
+        <br>
+        <a href="#myForm" class="btn rounded-5" style="background-color: rgba(45, 149, 150, 1); width: 94px;" role="button">Mulai</a>
       </div>
     </div>
     <div class="m-4">
@@ -277,7 +279,7 @@
         <div class="row mb-3">
           <label for="usia" class="col-sm-2 col-form-label">Usia</label>
           <div class="col-sm-6">
-            <input type="text" class="form-control" id="usia" name="usia" placeholder="e.g. 5" required/>
+            <input type="text" class="form-control" id="usia" name="usia" placeholder="e.g. 5" required />
           </div>
           <div class="col-sm-4">
             <select class="form-control col-sm" size="1" id="tahunOrBulan" name="tahunOrBulan" required>
