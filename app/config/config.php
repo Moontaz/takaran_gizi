@@ -1,6 +1,6 @@
 <?php 
 
-define("BASEURL","http://localhost/takaran-gizi1/public");
+define("BASEURL","http://localhost/project-rpl/public");
 
 // DB
 define('DB_HOST', 'localhost');

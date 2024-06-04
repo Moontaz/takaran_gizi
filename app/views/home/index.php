@@ -131,23 +131,17 @@
         <br />
         <span class="fs-2">Website ini adalah sebuah layanan yang dirancang untuk membantu pengguna menghitung kebutuhan gizi harian mereka berdasarkan usia, jenis kelamin, dan kondisi khusus seperti kehamilan atau menyusui sesuai dengan <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019" class="text-decoration-none text-black" target="blank">Permenkes No. 28 Tahun 2019</a>. Dengan mengisi formulir yang disediakan, pengguna dapat dengan mudah memperoleh informasi tentang kebutuhan gizi mereka untuk menjaga kesehatan dan kesejahteraan mereka.</span>
         <br>
-        <a href="#myForm" class="btn rounded-5" style="background-color: rgba(45, 149, 150, 1); width: 94px;" role="button">Mulai</a>
+        <a href="#myForm" class="btn rounded-5 mt-3" style="background-color: rgba(45, 149, 150, 1); width: 94px;" role="button">Mulai</a>
       </div>
     </div>
-    <div class="m-4">
-      <h1 class="">HEHEHEHEHE</h1>
+    <div class="m-2">
+      <h1>INFORMASI GIZI</h1>
       <div class="card-container row row-1 g-5 justify-content-around">
         <div class="card col-12 col-lg-3 card-cs">
-          <h4 class="card-header card-header-cs">Featured</h4>
+          <h4 class="card-header card-header-cs">Nutrisi</h4>
           <div class="card-body">
-            <h5 class="card-title">Nutrition</h5>
             <p class="card-text">
-              Involves the intake of essential nutrients like carbohydrates,
-              proteins, fats, vitamins, minerals, and water, crucial for
-              sustaining life and promoting bodily functions. Making informed
-              choices about food ensures a balanced diet tailored to
-              individual needs, supporting growth, development, and overall
-              well-being.
+              Melibatkan asupan nutrisi penting seperti karbohidrat, protein, lemak, vitamin, mineral, dan air, penting untuk menopang kehidupan dan meningkatkan fungsi tubuh. Membuat pilihan berdasarkan informasi mengenai makanan memastikan pola makan seimbang yang disesuaikan dengan kebutuhan individu, mendukung pertumbuhan, perkembangan, dan kesejahteraan secara keseluruhan.
             </p>
             <div class="btn-group dropup button-cover">
               <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -179,18 +173,12 @@
           </div>
         </div>
         <div class="card col-12 col-lg-3 card-cs">
-          <h4 class="card-header card-header-cs">Featured</h4>
+          <h4 class="card-header card-header-cs">Vitamin</h4>
           <div class="card-body">
-            <h5 class="card-title">Vitamin</h5>
             <p class="card-text">
-              Organic compounds vital for physiological processes, play
-              critical roles in metabolism, immune function, and cell growth.
-              Classified into fat-soluble and water-soluble types, they are
-              sourced from various foods and their deficiency or excess intake
-              can impact health significantly.
+              Senyawa organik penting untuk proses fisiologis, memainkan peran penting dalam metabolisme, fungsi kekebalan tubuh, dan pertumbuhan sel. Diklasifikasikan ke dalam jenis yang larut dalam lemak dan larut dalam air, sumbernya berasal dari berbagai makanan dan kekurangan atau kelebihan asupannya dapat berdampak signifikan pada kesehatan.
             </p>
-
-            <div class="btn-group dropup mt-4 button-cover">
+            <div class="btn-group dropup button-cover">
               <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropup
               </button>
@@ -232,15 +220,10 @@
           </div>
         </div>
         <div class="card col-12 col-lg-3 card-cs">
-          <h4 class="card-header card-header-cs">Featured</h4>
+          <h4 class="card-header card-header-cs">Mineral</h4>
           <div class="card-body">
-            <h5 class="card-title">Mineral</h5>
-            <p class="card-text">
-              Inorganic substances necessary for body functions, contribute to
-              bone health, muscle function, and nerve transmission. Classified
-              as macrominerals and trace minerals, they are obtained from
-              diverse food sources and are essential for preventing nutrient
-              deficiencies and supporting overall health.
+            <p class="card-text just">
+              Zat anorganik diperlukan untuk fungsi tubuh, berkontribusi terhadap kesehatan tulang, fungsi otot, dan transmisi saraf. Diklasifikasikan sebagai makromineral dan trace mineral, mineral ini diperoleh dari beragam sumber makanan dan penting untuk mencegah kekurangan nutrisi dan mendukung kesehatan secara keseluruhan.
             </p>
             <div class="btn-group dropup button-cover">
               <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -274,7 +257,7 @@
       </div>
     </div>
     <div class="form-container mx-auto p-4 rounded-3">
-      <h2 class="">Form</h2>
+      <h2>Form</h2>
       <form id="myForm">
         <div class="row mb-3">
           <label for="usia" class="col-sm-2 col-form-label">Usia</label>
