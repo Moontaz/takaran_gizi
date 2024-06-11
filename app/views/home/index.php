@@ -10,137 +10,28 @@
   <link rel="stylesheet" type="text/css" href="<?= BASEURL; ?>/css/styles.css" />
 </head>
 
-<body class="font-monospace">
-  <header id="header" class="py-1 fixed-top">
-    <nav class="navbar navbar-expand-lg bd-navbar sticky-top px-2 mx-2 px-lg-5 mx-lg-5">
-      <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#">Navbar</a>
-        <div class="navbar-toggler row row-2">
-          <button class="btn btn-search-toggler text-light col-6" id="btn-search" data-bs-target="#exampleModal" data-bs-toggle="modal">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-            </svg>
-          </button>
-          <button class="bg-cs-primary hamburger-toggler col-6" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="offcanvas offcanvas-end bg-cs-primary" hidden tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" data-bs-scroll="true">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">
-              Title or Logo
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-lg-0">
-              <li class="nav-item nav-hover rounded">
-                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item nav-hover rounded">
-                <a class="nav-link text-light" href="#">Link</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                  </svg>
-                </a>
-              </li>
-              <li class="nav-item dropdown nav-hover rounded">
-                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu text-light">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li class="">
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item nav-hover rounded">
-              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item nav-hover rounded">
-              <a class="nav-link text-light" href="#">Link</a>
-            </li>
-          </ul>
-
-          <!-- Button trigger modal Searching-->
-          <button class="btn btn-search btn-outline-light text-light" id="btn-search" data-bs-target="#exampleModal" data-bs-toggle="modal">
-            <div class="label-search col">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-              </svg>
-              <span>Search</span>
-            </div>
-
-            <div class="shortcut-search align-items-center rounded-1 border border-0">
-              <span class="" style="font-size: 0.5rem">CTRL</span>
-              <span class="">F</span>
-            </div>
-          </button>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-github" viewBox="0 0 16 16">
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg>
-              </a>
-            </li>
-            <li class="nav-item dropdown nav-hover rounded">
-              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu text-light">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li class="">
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+<body class="">
   <div class="container">
     <div class="main-page">
       <div class="tagline text-center">
         <span class="fs-1">Kebutuhan Gizi Harian</span>
         <br />
-        <span class="fs-2">Website ini adalah sebuah layanan yang dirancang untuk membantu pengguna menghitung kebutuhan gizi harian mereka berdasarkan usia, jenis kelamin, dan kondisi khusus seperti kehamilan atau menyusui sesuai dengan <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019" class="text-decoration-none text-black" target="blank">Permenkes No. 28 Tahun 2019</a>. Dengan mengisi formulir yang disediakan, pengguna dapat dengan mudah memperoleh informasi tentang kebutuhan gizi mereka untuk menjaga kesehatan dan kesejahteraan mereka.</span>
+        <span class="fs-2">Website ini dirancang untuk membantu pengguna menghitung
+          kebutuhan gizi harian mereka berdasarkan usia, jenis kelamin, dan kondisi khusus seperti kehamilan atau
+          menyusui sesuai dengan <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019" class="text-decoration-underline text-primary" target="blank">Permenkes No. 28 Tahun 2019</a>. Dengan
+          mengisi
+          formulir yang disediakan, pengguna dapat dengan mudah memperoleh informasi tentang kebutuhan gizi mereka
+          untuk menjaga kesehatan dan kesejahteraan mereka.</span>
         <br>
-        <a href="#myForm" class="btn rounded-5" style="background-color: rgba(45, 149, 150, 1); width: 94px;" role="button">Mulai</a>
+        <a href="#myForm" class="btn btn-primary rounded-5" style=" width: 94px;" role="button">Mulai</a>
       </div>
     </div>
-    <div class="m-4">
-      <h1 class="">HEHEHEHEHE</h1>
+    <div class="m-4 mt-5">
+      <h2 class="text-center mb-4">This contains 3 keypoint data for get better life!</h2>
       <div class="card-container row row-1 g-5 justify-content-around">
         <div class="card col-12 col-lg-3 card-cs">
-          <h4 class="card-header card-header-cs">Featured</h4>
+          <h4 class="card-header card-header-cs text-primary">Nutrition</h4>
           <div class="card-body">
-            <h5 class="card-title">Nutrition</h5>
             <p class="card-text">
               Involves the intake of essential nutrients like carbohydrates,
               proteins, fats, vitamins, minerals, and water, crucial for
@@ -150,7 +41,7 @@
               well-being.
             </p>
             <div class="btn-group dropup button-cover">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropup
               </button>
               <ul class="dropdown-menu p-3">
@@ -179,9 +70,8 @@
           </div>
         </div>
         <div class="card col-12 col-lg-3 card-cs">
-          <h4 class="card-header card-header-cs">Featured</h4>
+          <h4 class="card-header card-header-cs text-primary">Vitamin</h4>
           <div class="card-body">
-            <h5 class="card-title">Vitamin</h5>
             <p class="card-text">
               Organic compounds vital for physiological processes, play
               critical roles in metabolism, immune function, and cell growth.
@@ -191,7 +81,7 @@
             </p>
 
             <div class="btn-group dropup mt-4 button-cover">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropup
               </button>
               <ul class="dropdown-menu p-3">
@@ -232,9 +122,8 @@
           </div>
         </div>
         <div class="card col-12 col-lg-3 card-cs">
-          <h4 class="card-header card-header-cs">Featured</h4>
+          <h4 class="card-header card-header-cs text-primary">Mineral</h4>
           <div class="card-body">
-            <h5 class="card-title">Mineral</h5>
             <p class="card-text">
               Inorganic substances necessary for body functions, contribute to
               bone health, muscle function, and nerve transmission. Classified
@@ -243,7 +132,7 @@
               deficiencies and supporting overall health.
             </p>
             <div class="btn-group dropup button-cover">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropup
               </button>
               <ul class="dropdown-menu p-3">
@@ -303,7 +192,7 @@
           <div class="form-group row mt-3" id="umurHamilOrMenyusui"></div>
         </div>
         <div class="btn-group btn-cs">
-          <button type="button" id="disabledInput" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="submitForm()">
+          <button type="button" id="disabledInput" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="submitForm()">
             Submit
           </button>
         </div>
@@ -312,29 +201,6 @@
   </div>
 
   <!-- Modal -->
-
-  <!-- Modal Searching-->
-  <div class="modal" id="exampleModal" tabindex="10" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <form action="" class="d-flex col form-search mx-auto px-2 py-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2d9596" class="bi bi-search me-2" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-            </svg>
-            </label>
-            <input type="text" class="form-input-search col-sm-11" id="specificSizeInputGroupUsername" placeholder="Search tips" />
-          </form>
-        </div>
-        <div class="modal-body">...</div>
-        <div class="modal-footer d-flex justify-content-end">
-          <span>Generated by me.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Searching Tutup -->
-
   <!-- Modal 1 -->
   <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -541,16 +407,20 @@
   <!-- Modal 3 Tutup -->
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+  </script>
   <script src="<?= BASEURL; ?>/js/script.js"></script>
   <script>
     function submitForm() {
       var usia = document.getElementById("usia").value;
       var tahunOrBulan = document.getElementById("tahunOrBulan").value;
       var gender = document.getElementById("gender").value;
-      var kondisiKhusus = document.querySelector('input[name="kondisiKhusus"]:checked') ? document.querySelector('input[name="kondisiKhusus"]:checked').value : '';
-      var umurHamilOrMenyusui = document.querySelector('input[name="umurHamilOrMenyusui"]:checked') ? document.querySelector('input[name="umurHamilOrMenyusui"]:checked').value : '';
+      var kondisiKhusus = document.querySelector('input[name="kondisiKhusus"]:checked') ? document.querySelector(
+        'input[name="kondisiKhusus"]:checked').value : '';
+      var umurHamilOrMenyusui = document.querySelector('input[name="umurHamilOrMenyusui"]:checked') ? document
+        .querySelector('input[name="umurHamilOrMenyusui"]:checked').value : '';
 
       var formData = new FormData();
       formData.append("usia", usia);
