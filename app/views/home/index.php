@@ -8,8 +8,7 @@
    <meta name="description" content="" />
    <meta name="keywords" content="" />
    <!-- Bootstrap CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
    <link rel="stylesheet" href="<?= BASEURL; ?>/assets/css/main.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -111,14 +110,10 @@
                </header>
                <div class="content">
                   <div class="gallery">
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/01.jpg" class="landscape"><img
-                           src="<?= BASEURL; ?>/images/gallery/thumbs/01.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/02.jpg"><img
-                           src="<?= BASEURL; ?>/images/gallery/thumbs/02.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/03.jpg"><img
-                           src="<?= BASEURL; ?>/images/gallery/thumbs/03.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/04.jpg" class="landscape"><img
-                           src="<?= BASEURL; ?>/images/gallery/thumbs/04.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/01.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/01.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/02.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/02.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/03.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/03.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/04.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/04.jpg" alt="" /></a>
                   </div>
                </div>
             </section>
@@ -138,12 +133,9 @@
                </header>
                <div class="content">
                   <div class="gallery">
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/05.jpg" class="landscape"><img
-                           src="<?= BASEURL; ?>/images/gallery/thumbs/05.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/06.jpg"><img
-                           src="<?= BASEURL; ?>/images/gallery/thumbs/06.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/07.jpg"><img
-                           src="<?= BASEURL; ?>/images/gallery/thumbs/07.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/05.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/05.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/06.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/06.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/07.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/07.jpg" alt="" /></a>
                   </div>
                </div>
             </section>
@@ -163,12 +155,9 @@
                </header>
                <div class="content">
                   <div class="gallery">
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/08.jpg" class="portrait"><img
-                           src="<?= BASEURL; ?>/images/gallery/thumbs/08.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/09.jpg" class="portrait"><img
-                           src="<?= BASEURL; ?>/images/gallery/thumbs/09.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/10.jpg" class="landscape"><img
-                           src="<?= BASEURL; ?>/images/gallery/thumbs/10.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/08.jpg" class="portrait"><img src="<?= BASEURL; ?>/images/gallery/thumbs/08.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/09.jpg" class="portrait"><img src="<?= BASEURL; ?>/images/gallery/thumbs/09.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/10.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/10.jpg" alt="" /></a>
                   </div>
                </div>
             </section>
@@ -183,8 +172,7 @@
          <div class="content">
             <p>
                Data yang kami gunakan berasal dari pemerintah melalui Kementerian Kesehatan yang dituangkan
-               pada <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019"
-                  class="text-decoration-underline" target="blank"><strong>Permenkes No. 28 Tahun 2019</strong></a>.
+               pada <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019" class="text-decoration-underline" target="blank"><strong>Permenkes No. 28 Tahun 2019</strong></a>.
             </p>
             <ul class="actions">
                <li><a href="#" class="button primary large">Get Started</a></li>
@@ -233,8 +221,7 @@
                   <div class="field half" id="umurHamilOrMenyusui"></div>
                </div>
                <div class="">
-                  <button type="button" id="disabledInput" class="button primary large" data-bs-toggle="modal"
-                     data-bs-target="#staticBackdrop" onclick="submitForm()">
+                  <button type="button" id="disabledInput" class="button primary large" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="submitForm()">
                      Submit
                   </button>
                </div>
@@ -246,16 +233,14 @@
 
          <!-- Modal -->
          <!-- Modal 1 -->
-         <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                <div class="modal-content" style="width: 700px;">
                   <div class="modal-header pb-0" style="height: auto;">
                      <h1 class="mb-0" id="staticBackdropLabel" style="font-size: 3rem;">
                         Nutrition
                      </h1>
-                     <button type="button" class="btn-close fs-3 me-1" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                     <button type="button" class="btn-close fs-3 me-1" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                      <div class="table-responsive">
@@ -291,12 +276,10 @@
                   </div>
                   <div class="modal-footer">
                      <div class="input-group fs-5" role="group" aria-label="Basic example">
-                        <button type="button" class="button primary ms-auto" data-bs-target="#staticBackdrop"
-                           data-bs-toggle="modal" disabled>
+                        <button type="button" class="button primary ms-auto" data-bs-target="#staticBackdrop" data-bs-toggle="modal" disabled>
                            Previous
                         </button>
-                        <button type="button" class="button primary" data-bs-target="#staticBackdrop2"
-                           data-bs-toggle="modal">
+                        <button type="button" class="button primary" data-bs-target="#staticBackdrop2" data-bs-toggle="modal">
                            Next
                         </button>
                      </div>
@@ -306,16 +289,14 @@
          </div>
          <!-- Modal 1 Tutup -->
          <!-- Modal 2 -->
-         <div class="modal" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                <div class="modal-content">
                   <div class="modal-header pb-0" style="height: auto;">
                      <h1 class="mb-0" id="staticBackdropLabel" style="font-size: 3rem;">
                         Vitamin
                      </h1>
-                     <button type="button" class="btn-close fs-3 me-1" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                     <button type="button" class="btn-close fs-3 me-1" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                      <div class="table-responsive">
@@ -369,12 +350,10 @@
                   </div>
                   <div class="modal-footer">
                      <div class="input-group fs-5" role="group" aria-label="Basic example">
-                        <button type="button" class="button primary ms-auto" data-bs-target="#staticBackdrop"
-                           data-bs-toggle="modal">
+                        <button type="button" class="button primary ms-auto" data-bs-target="#staticBackdrop" data-bs-toggle="modal">
                            Previous
                         </button>
-                        <button type="button" class="button primary" data-bs-target="#staticBackdrop3"
-                           data-bs-toggle="modal">
+                        <button type="button" class="button primary" data-bs-target="#staticBackdrop3" data-bs-toggle="modal">
                            Next
                         </button>
                      </div>
@@ -384,16 +363,14 @@
          </div>
          <!-- Modal 2 Tutup -->
          <!-- Modal 3 -->
-         <div class="modal" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                <div class="modal-content">
                   <div class="modal-header pb-0" style="height: auto;">
                      <h1 class="mb-0" id="staticBackdropLabel" style="font-size: 3rem;">
                         Mineral
                      </h1>
-                     <button type="button" class="btn-close fs-3 me-1" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                     <button type="button" class="btn-close fs-3 me-1" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                      <div class="table-responsive">
@@ -447,12 +424,10 @@
                   </div>
                   <div class="modal-footer">
                      <div class="input-group fs-5" role="group" aria-label="Basic example">
-                        <button type="button" class="button primary ms-auto" data-bs-target="#staticBackdrop2"
-                           data-bs-toggle="modal">
+                        <button type="button" class="button primary ms-auto" data-bs-target="#staticBackdrop2" data-bs-toggle="modal">
                            Previous
                         </button>
-                        <button type="button" class="button primary" data-bs-target="#staticBackdrop"
-                           data-bs-toggle="modal" disabled>
+                        <button type="button" class="button primary" data-bs-target="#staticBackdrop" data-bs-toggle="modal" disabled>
                            Next
                         </button>
                      </div>
@@ -466,7 +441,6 @@
 
 
    <!-- Scripts -->
-   <script src="<?= BASEURL; ?>assets/js/script.js"></script>
    <script src="<?= BASEURL; ?>/assets/js/jquery.min.js"></script>
    <script src="<?= BASEURL; ?>/assets/js/jquery.scrolly.min.js"></script>
    <script src="<?= BASEURL; ?>/assets/js/browser.min.js"></script>
@@ -474,134 +448,133 @@
    <script src="<?= BASEURL; ?>/assets/js/util.js"></script>
    <script src="<?= BASEURL; ?>/assets/js/main.js"></script>
    <!-- Bootstrap JS -->
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
    </script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
    </script>
+   <script src="<?= BASEURL; ?>/assets/js/script.js"></script>
    <script>
-   function submitForm() {
-      var usia = document.getElementById("usia").value;
-      var tahunOrBulan = document.getElementById("tahunOrBulan").value;
-      var gender = document.getElementById("gender").value;
-      var kondisiKhusus = document.querySelector(
-            'input[name="kondisiKhusus"]:checked'
-         ) ?
-         document.querySelector('input[name="kondisiKhusus"]:checked').value :
-         "";
-      var umurHamilOrMenyusui = document.querySelector(
-            'input[name="umurHamilOrMenyusui"]:checked'
-         ) ?
-         document.querySelector('input[name="umurHamilOrMenyusui"]:checked')
-         .value :
-         "";
+      function submitForm() {
+         var usia = document.getElementById("usia").value;
+         var tahunOrBulan = document.getElementById("tahunOrBulan").value;
+         var gender = document.getElementById("gender").value;
+         var kondisiKhusus = document.querySelector(
+               'input[name="kondisiKhusus"]:checked'
+            ) ?
+            document.querySelector('input[name="kondisiKhusus"]:checked').value :
+            "";
+         var umurHamilOrMenyusui = document.querySelector(
+               'input[name="umurHamilOrMenyusui"]:checked'
+            ) ?
+            document.querySelector('input[name="umurHamilOrMenyusui"]:checked')
+            .value :
+            "";
 
-      var formData = new FormData();
-      formData.append("usia", usia);
-      formData.append("tahunOrBulan", tahunOrBulan);
-      formData.append("gender", gender);
-      if (kondisiKhusus && umurHamilOrMenyusui) {
-         formData.append("hamilMenyusui", kondisiKhusus);
-         formData.append("umur", umurHamilOrMenyusui);
-      }
-
-      var xhr = new XMLHttpRequest();
-      xhr.open("POST", "<?= BASEURL; ?>/home/find", true);
-      xhr.onreadystatechange = function() {
-         if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-               try {
-                  var responseData = JSON.parse(xhr.responseText);
-                  // tabel 1
-                  document.getElementById("energi").innerText =
-                     responseData.tabel1.energi + " kkal";
-                  document.getElementById("protein").innerText =
-                     responseData.tabel1.protein + " g";
-                  document.getElementById("total_lemak").innerText =
-                     responseData.tabel1.total_lemak + " g";
-                  document.getElementById("karbohidrat").innerText =
-                     responseData.tabel1.karbohidrat + " g";
-                  document.getElementById("omega3").innerText =
-                     responseData.tabel1.omega3 + " g";
-                  document.getElementById("omega6").innerText =
-                     responseData.tabel1.omega6 + " g";
-                  document.getElementById("serat").innerText =
-                     responseData.tabel1.serat + " g";
-                  document.getElementById("air").innerText =
-                     responseData.tabel1.air + " ml";
-
-                  // tabel 2
-                  document.getElementById("vitA").innerText =
-                     responseData.tabel2.vitA + " RE";
-                  document.getElementById("vitD").innerText =
-                     responseData.tabel2.vitD + " mcg";
-                  document.getElementById("vitE").innerText =
-                     responseData.tabel2.vitE + " mcg";
-                  document.getElementById("vitK").innerText =
-                     responseData.tabel2.vitK + " mcg";
-                  document.getElementById("vitB1").innerText =
-                     responseData.tabel2.vitB1 + " mg";
-                  document.getElementById("vitB2").innerText =
-                     responseData.tabel2.vitB2 + " mg";
-                  document.getElementById("vitB3").innerText =
-                     responseData.tabel2.vitB3 + " mg";
-                  document.getElementById("vitB5").innerText =
-                     responseData.tabel2.vitB5 + " mg";
-                  document.getElementById("vitB6").innerText =
-                     responseData.tabel2.vitB6 + " mg";
-                  document.getElementById("vitB12").innerText =
-                     responseData.tabel2.vitB12 + " mcg";
-                  document.getElementById("folat").innerText =
-                     responseData.tabel2.folat + " mcg";
-                  document.getElementById("Biotin").innerText =
-                     responseData.tabel2.biotin + " mcg";
-                  document.getElementById("kolin").innerText =
-                     responseData.tabel2.kolin + " mg";
-                  document.getElementById("vitC").innerText =
-                     responseData.tabel2.vitC + " mg";
-
-                  // tabel 3
-                  document.getElementById("kalsium").innerText =
-                     responseData.tabel3.kalsium + " mg";
-                  document.getElementById("fosfor").innerText =
-                     responseData.tabel3.fosfor + " mg";
-                  document.getElementById("magnesium").innerText =
-                     responseData.tabel3.magnesium + " mcg";
-                  document.getElementById("besi").innerText =
-                     responseData.tabel3.besi + " mg";
-                  document.getElementById("iodium").innerText =
-                     responseData.tabel3.iodium + " mcg";
-                  document.getElementById("seng").innerText =
-                     responseData.tabel3.seng + " mg";
-                  document.getElementById("tembaga").innerText =
-                     responseData.tabel3.tembaga + " mcg";
-                  document.getElementById("flour").innerText =
-                     responseData.tabel3.fluor + " mg";
-                  document.getElementById("kromium").innerText =
-                     responseData.tabel3.kromium + " mcg";
-                  document.getElementById("kalium").innerText =
-                     responseData.tabel3.kalium + " mg";
-                  document.getElementById("natrium").innerText =
-                     responseData.tabel3.natrium + " mg";
-                  document.getElementById("klor").innerText =
-                     responseData.tabel3.klor + " mg";
-                  document.getElementById("selenium").innerText =
-                     responseData.tabel3.selenium + " mcg";
-                  document.getElementById("mangan").innerText =
-                     responseData.tabel3.mangan + " mg";
-
-                  console.log(responseData);
-               } catch (error) {
-                  console.error("Error parsing JSON:", error);
-               }
-            } else {
-               console.error("Failed to send form data.");
-            }
+         var formData = new FormData();
+         formData.append("usia", usia);
+         formData.append("tahunOrBulan", tahunOrBulan);
+         formData.append("gender", gender);
+         if (kondisiKhusus && umurHamilOrMenyusui) {
+            formData.append("hamilMenyusui", kondisiKhusus);
+            formData.append("umur", umurHamilOrMenyusui);
          }
-      };
-      xhr.send(formData);
-   }
+
+         var xhr = new XMLHttpRequest();
+         xhr.open("POST", "<?= BASEURL; ?>/home/find", true);
+         xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+               if (xhr.status === 200) {
+                  try {
+                     var responseData = JSON.parse(xhr.responseText);
+                     // tabel 1
+                     document.getElementById("energi").innerText =
+                        responseData.tabel1.energi + " kkal";
+                     document.getElementById("protein").innerText =
+                        responseData.tabel1.protein + " g";
+                     document.getElementById("total_lemak").innerText =
+                        responseData.tabel1.total_lemak + " g";
+                     document.getElementById("karbohidrat").innerText =
+                        responseData.tabel1.karbohidrat + " g";
+                     document.getElementById("omega3").innerText =
+                        responseData.tabel1.omega3 + " g";
+                     document.getElementById("omega6").innerText =
+                        responseData.tabel1.omega6 + " g";
+                     document.getElementById("serat").innerText =
+                        responseData.tabel1.serat + " g";
+                     document.getElementById("air").innerText =
+                        responseData.tabel1.air + " ml";
+
+                     // tabel 2
+                     document.getElementById("vitA").innerText =
+                        responseData.tabel2.vitA + " RE";
+                     document.getElementById("vitD").innerText =
+                        responseData.tabel2.vitD + " mcg";
+                     document.getElementById("vitE").innerText =
+                        responseData.tabel2.vitE + " mcg";
+                     document.getElementById("vitK").innerText =
+                        responseData.tabel2.vitK + " mcg";
+                     document.getElementById("vitB1").innerText =
+                        responseData.tabel2.vitB1 + " mg";
+                     document.getElementById("vitB2").innerText =
+                        responseData.tabel2.vitB2 + " mg";
+                     document.getElementById("vitB3").innerText =
+                        responseData.tabel2.vitB3 + " mg";
+                     document.getElementById("vitB5").innerText =
+                        responseData.tabel2.vitB5 + " mg";
+                     document.getElementById("vitB6").innerText =
+                        responseData.tabel2.vitB6 + " mg";
+                     document.getElementById("vitB12").innerText =
+                        responseData.tabel2.vitB12 + " mcg";
+                     document.getElementById("folat").innerText =
+                        responseData.tabel2.folat + " mcg";
+                     document.getElementById("Biotin").innerText =
+                        responseData.tabel2.biotin + " mcg";
+                     document.getElementById("kolin").innerText =
+                        responseData.tabel2.kolin + " mg";
+                     document.getElementById("vitC").innerText =
+                        responseData.tabel2.vitC + " mg";
+
+                     // tabel 3
+                     document.getElementById("kalsium").innerText =
+                        responseData.tabel3.kalsium + " mg";
+                     document.getElementById("fosfor").innerText =
+                        responseData.tabel3.fosfor + " mg";
+                     document.getElementById("magnesium").innerText =
+                        responseData.tabel3.magnesium + " mcg";
+                     document.getElementById("besi").innerText =
+                        responseData.tabel3.besi + " mg";
+                     document.getElementById("iodium").innerText =
+                        responseData.tabel3.iodium + " mcg";
+                     document.getElementById("seng").innerText =
+                        responseData.tabel3.seng + " mg";
+                     document.getElementById("tembaga").innerText =
+                        responseData.tabel3.tembaga + " mcg";
+                     document.getElementById("flour").innerText =
+                        responseData.tabel3.fluor + " mg";
+                     document.getElementById("kromium").innerText =
+                        responseData.tabel3.kromium + " mcg";
+                     document.getElementById("kalium").innerText =
+                        responseData.tabel3.kalium + " mg";
+                     document.getElementById("natrium").innerText =
+                        responseData.tabel3.natrium + " mg";
+                     document.getElementById("klor").innerText =
+                        responseData.tabel3.klor + " mg";
+                     document.getElementById("selenium").innerText =
+                        responseData.tabel3.selenium + " mcg";
+                     document.getElementById("mangan").innerText =
+                        responseData.tabel3.mangan + " mg";
+
+                     console.log(responseData);
+                  } catch (error) {
+                     console.error("Error parsing JSON:", error);
+                  }
+               } else {
+                  console.error("Failed to send form data.");
+               }
+            }
+         };
+         xhr.send(formData);
+      }
    </script>
 </body>
 
