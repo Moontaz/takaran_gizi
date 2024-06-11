@@ -15,17 +15,25 @@
    <div class="container">
       <div class="main-page">
          <div class="tagline text-center">
-            <span class="fs-1">Kebutuhan Gizi Harian</span>
-            <br />
-            <span class="fs-2">Website ini dirancang untuk membantu pengguna menghitung
-               kebutuhan gizi harian mereka berdasarkan usia, jenis kelamin, dan kondisi khusus seperti kehamilan atau
-               menyusui sesuai dengan <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019"
-                  class="text-decoration-underline text-primary" target="blank">Permenkes No. 28 Tahun 2019</a>. Dengan
-               mengisi
-               formulir yang disediakan, pengguna dapat dengan mudah memperoleh informasi tentang kebutuhan gizi mereka
-               untuk menjaga kesehatan dan kesejahteraan mereka.</span>
-            <br>
-            <a href="#myForm" class="btn btn-primary rounded-5" style=" width: 94px;" role="button">Mulai</a>
+            <div class="d-flex flex-sm-row">
+
+               <span class="fs-1 col-sm-4 my-sm-auto">Kebutuhan Gizi Harian</span>
+               <div class="bg-secondary" style="width: 10px;"></div>
+               <br />
+               <span class="fs-5 ms-sm-4 text-start">Website ini dirancang untuk membantu pengguna menghitung
+                  kebutuhan gizi harian mereka berdasarkan usia, jenis kelamin, dan kondisi khusus seperti kehamilan
+                  atau
+                  menyusui sesuai dengan <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019"
+                     class="text-decoration-underline text-primary" target="blank">Permenkes No. 28 Tahun 2019</a>.
+                  Dengan
+                  mengisi
+                  formulir yang disediakan, pengguna dapat dengan mudah memperoleh informasi tentang kebutuhan gizi
+                  mereka
+                  untuk menjaga kesehatan dan kesejahteraan mereka.</span>
+               <br>
+            </div>
+            <a href="#myForm" class="btn btn-lg btn-primary rounded-5 mt-5" style=" width: 94px;"
+               role="button">Mulai</a>
          </div>
       </div>
       <div class="m-4 mt-5">
