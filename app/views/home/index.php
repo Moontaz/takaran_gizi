@@ -196,7 +196,6 @@
                <label for="usia" class="col-sm-2 col-form-label">Usia</label>
                <div class="fields">
                   <div class="field half">
-                     <!-- <input type="text" name="name" id="name" placeholder="Name" /> -->
                      <input type="text" class="" id="usia" name="usia" placeholder="e.g. 5" required />
                   </div>
                   <div class="field half">
@@ -209,7 +208,7 @@
                <div class="field">
                   <label for="gender" class="">Jenis Kelamin</label>
                   <div class="field">
-                     <select class="" id="gender" name="gender" required>
+                     <select class="" size="1" id="gender" name="gender" required>
                         <option selected>-</option>
                         <option value="laki-laki">Laki-laki</option>
                         <option value="perempuan">Perempuan</option>
@@ -217,8 +216,8 @@
                   </div>
                </div>
                <div class="fields">
-                  <div class="field half" id="hamilOrMenyusui"></div>
-                  <div class="field half" id="umurHamilOrMenyusui"></div>
+                  <div class="field half mt-4" id="hamilOrMenyusui"></div>
+                  <div class="field half mt-4" id="umurHamilOrMenyusui"></div>
                </div>
                <div class="">
                   <button type="button" id="disabledInput" class="button primary large" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="submitForm()">
@@ -469,6 +468,7 @@
             document.querySelector('input[name="umurHamilOrMenyusui"]:checked')
             .value :
             "";
+         console.log(umurHamilOrMenyusui);
 
          var formData = new FormData();
          formData.append("usia", usia);
@@ -486,6 +486,7 @@
                if (xhr.status === 200) {
                   try {
                      var responseData = JSON.parse(xhr.responseText);
+                     console.log(responseData);
                      // tabel 1
                      document.getElementById("energi").innerText =
                         responseData.tabel1.energi + " kkal";

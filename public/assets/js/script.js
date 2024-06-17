@@ -11,7 +11,7 @@ document.getElementById("gender").addEventListener("change", function () {
     umurHamilOrMenyusuiDiv.innerHTML = "";
   } else if (gender === "perempuan") {
     hamilOrMenyusuiDiv.innerHTML = `
-        <label class="">Kondisi Khusus</label>
+        <label>Kondisi Khusus</label>
           <div class="field half">
             <div class="field half">
               <input class="" type="radio" name="kondisiKhusus" id="inlineRadio1" value="tidak-keduanya" />
@@ -66,19 +66,11 @@ document
             <div class="field half">
                 <div class="">
                     <input class="" type="radio" name="umurHamilOrMenyusui" id="semester1" value="5" />
-                    <label class="" for="6bulanke-1">6 Bulan Pertama</label>
+                    <label class="" for="semester1">6 Bulan Pertama</label>
                 </div>
                 <div class="">
                     <input class="" type="radio" name="umurHamilOrMenyusui" id="semester2" value="8" />
-                    <label class="" for="6bulanke-2">6 Bulan Kedua</label>
-                </div>
-                <div class="">
-                    <input class="" type="radio" name="umurHamilOrMenyusui" id="trimester2" value="5" />
-                    <label class="" for="trimester2">Trimester II</label>
-                </div>
-                <div class="">
-                    <input class="" type="radio" name="umurHamilOrMenyusui" id="trimester3" value="8" />
-                    <label class="" for="trimester3">Trimester III</label>
+                    <label class="" for="semester2">6 Bulan Kedua</label>
                 </div>
             </div>
         `;
