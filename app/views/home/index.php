@@ -23,8 +23,8 @@
             <br />
             <p>
                A site to know your daily needs <br />by
-               <a href="https://github.com/Moontaz">Moongo</a> /
-               <a href="#">Lana</a>
+               <a href="https://github.com/Moontaz" target="_blank">Moongo</a> /
+               <a href="https://github.com/lebefriedlich" target="_blank">lebefriedlich</a>
             </p>
             <ul class="actions">
                <li>
@@ -172,7 +172,7 @@
          <div class="content">
             <p>
                Data yang kami gunakan berasal dari pemerintah melalui Kementerian Kesehatan yang dituangkan
-               pada <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019" class="text-decoration-underline" target="blank"><strong>Permenkes No. 28 Tahun 2019</strong></a>.
+               pada <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019" class="text-decoration-underline" target="_blank"><strong>Permenkes No. 28 Tahun 2019</strong></a>.
             </p>
             <ul class="actions">
                <li><a href="#" class="button primary large">Get Started</a></li>
