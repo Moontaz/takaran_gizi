@@ -1,1 +1,0 @@
-# takaran_gizi
