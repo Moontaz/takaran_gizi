@@ -3,7 +3,7 @@ document.getElementById("gender").addEventListener("change", function () {
   var hamilOrMenyusuiDiv = document.getElementById("hamilOrMenyusui");
   var umurHamilOrMenyusuiDiv = document.getElementById("umurHamilOrMenyusui");
 
-  if (gender === "-") {
+  if (gender === "") {
     hamilOrMenyusuiDiv.innerHTML = "";
     umurHamilOrMenyusuiDiv.innerHTML = "";
   } else if (gender === "laki-laki") {

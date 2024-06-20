@@ -1,0 +1,119 @@
+.bg-cs-primary {
+  background-color: rgba(0, 123, 255, 1);
+}
+.bg-cs-netral {
+  background-color: #f7f7fc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Poppins", sans-serif; */
+  display: grid;
+  /* color: rgb(255, 255, 255); */
+  background-color: #f3f3f3;
+  max-width: 2040px;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  color: #fff7fc;
+  width: 100%;
+  background-color: rgba(0, 123, 255, 1);
+}
+
+.navbar-toggler {
+  outline: 0;
+  border: 0;
+  gap: 0;
+}
+.hamburger-toggler {
+  outline: 0;
+  border: 0;
+}
+.btn-search:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+.btn-search .label-search span {
+  font-weight: 500;
+  font-size: larger;
+}
+.btn-search-toggler {
+  outline: 0;
+  padding: 0.4rem;
+}
+.shortcut-search {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.1rem 0.3rem;
+}
+.shortcut-search span {
+  margin: auto;
+}
+header .dropdown-item:hover {
+  background-color: rgba(0, 123, 255, 0.5);
+}
+.nav-hover:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.bi-github:hover {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+#specificSizeInputGroupUsername {
+  width: full;
+}
+
+.modal-header form {
+  border: 2px solid #007bff;
+
+  border-radius: 0.375rem;
+}
+
+.main-page {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input-search {
+  border-color: transparent;
+}
+.form-input-search:focus {
+  outline: transparent;
+}
+.table-card {
+  width: 190px;
+}
+
+.button-cover {
+  background-color: #007bff;
+}
+.btn-secondary {
+  background-color: #007bff;
+}
+.btn-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.card-cs {
+  border-color: #007bff;
+}
+
+.card-header-cs {
+  color: #007bff;
+}
+
+.btn-cs {
+  background-color: #007bff;
+}
