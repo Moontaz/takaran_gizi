@@ -24,7 +24,7 @@
                 <h1>Takaran Gizi</h1>
                 <br />
                 <p>
-                    A site to know your daily needs <br />by
+                    Halaman Website untuk mengetahui kebutuhan gizi harianmu <br />by
                     <a href="https://github.com/Moontaz" target="_blank">Moongo</a> /
                     <a href="https://github.com/lebefriedlich" target="_blank">lebefriedlich</a>
                 </p>
@@ -61,33 +61,6 @@
         <!-- Section -->
         <section>
             <header>
-                <h2>Feugiat consequat tempus ultrices</h2>
-            </header>
-            <div class="content">
-                <p>
-                    <strong>Etiam tristique libero</strong> eu nibh porttitor amet
-                    fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies
-                    condimentum.
-                </p>
-                <ul class="feature-icons">
-                    <li class="icon solid fa-laptop">Consequat tempus</li>
-                    <li class="icon solid fa-bolt">Etiam adipiscing</li>
-                    <li class="icon solid fa-signal">Libero nullam</li>
-                    <li class="icon solid fa-cog">Blandit condimentum</li>
-                    <li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-                    <li class="icon solid fa-code">Nibh amet venenatis</li>
-                </ul>
-                <p>
-                    Vehicula ultrices sed ultricies condimentum. Magna sed etiam
-                    consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et
-                    dolor libero, feugiat magna tempus, sed et lorem adipiscing.
-                </p>
-            </div>
-        </section>
-
-        <!-- Section -->
-        <section>
-            <header>
                 <h2>Tiga Elemen Penting untuk Membangun Hidup Sehat</h2>
             </header>
             <div class="content">
@@ -112,14 +85,12 @@
                     </header>
                     <div class="content">
                         <div class="gallery">
-                            <a href="/images/gallery/fulls/01.jpg" class="landscape"><img
-                                    src="/images/gallery/thumbs/01.jpg" alt="" /></a>
-                            <a href="/images/gallery/fulls/02.jpg"><img src="/images/gallery/thumbs/02.jpg"
-                                    alt="" /></a>
-                            <a href="/images/gallery/fulls/03.jpg"><img src="/images/gallery/thumbs/03.jpg"
-                                    alt="" /></a>
-                            <a href="/images/gallery/fulls/04.jpg" class="landscape"><img
-                                    src="/images/gallery/thumbs/04.jpg" alt="" /></a>
+                            <a href="/images/gallery/fulls/nutrition01.jpg" class="landscape"><img
+                                    src="/images/gallery/thumbs/nutrition01.jpg" alt="" /></a>
+                            <a href="/images/gallery/fulls/nutrition02.jpg"><img
+                                    src="/images/gallery/thumbs/nutrition02.jpg" alt="" /></a>
+                            <a href="/images/gallery/fulls/nutrition03.jpg"><img
+                                    src="/images/gallery/thumbs/nutrition03.jpg" alt="" /></a>
                         </div>
                     </div>
                 </section>
@@ -139,12 +110,12 @@
                     </header>
                     <div class="content">
                         <div class="gallery">
-                            <a href="/images/gallery/fulls/05.jpg" class="landscape"><img
-                                    src="/images/gallery/thumbs/05.jpg" alt="" /></a>
-                            <a href="/images/gallery/fulls/06.jpg"><img src="/images/gallery/thumbs/06.jpg"
-                                    alt="" /></a>
-                            <a href="/images/gallery/fulls/07.jpg"><img src="/images/gallery/thumbs/07.jpg"
-                                    alt="" /></a>
+                            <a href="/images/gallery/fulls/vitamin01.jpg" class="landscape"><img
+                                    src="/images/gallery/thumbs/vitamin01.jpg" alt="" /></a>
+                            <a href="/images/gallery/fulls/vitamin02.jpg"><img
+                                    src="/images/gallery/thumbs/vitamin02.jpg" alt="" /></a>
+                            <a href="/images/gallery/fulls/vitamin03.jpg"><img
+                                    src="/images/gallery/thumbs/vitamin03.jpg" alt="" /></a>
                         </div>
                     </div>
                 </section>
@@ -164,12 +135,12 @@
                     </header>
                     <div class="content">
                         <div class="gallery">
-                            <a href="/images/gallery/fulls/08.jpg" class="portrait"><img
-                                    src="/images/gallery/thumbs/08.jpg" alt="" /></a>
-                            <a href="/images/gallery/fulls/09.jpg" class="portrait"><img
-                                    src="/images/gallery/thumbs/09.jpg" alt="" /></a>
-                            <a href="/images/gallery/fulls/10.jpg" class="landscape"><img
-                                    src="/images/gallery/thumbs/10.jpg" alt="" /></a>
+                            <a href="/images/gallery/fulls/mineral03.jpg" class="portrait"><img
+                                    src="/images/gallery/thumbs/mineral03.jpg" alt="" /></a>
+                            <a href="/images/gallery/fulls/mineral02.jpg" class="portrait"><img
+                                    src="/images/gallery/thumbs/mineral02.jpg" alt="" /></a>
+                            <a href="/images/gallery/fulls/mineral01.jpg" class="landscape"><img
+                                    src="/images/gallery/thumbs/mineral01.jpg" alt="" /></a>
                         </div>
                     </div>
                 </section>
@@ -189,22 +160,20 @@
                             2019</strong></a>.
                 </p>
                 <ul class="actions">
-                    <li><a href="#" class="button primary large">Get Started</a></li>
-                    <li><a href="#" class="button large">Learn More</a></li>
+                    <li><a href="#form" class="button primary large">Mulai Sekarang</a></li>
+                    <li><a href="#first" class="button large">Pelajari Lebih Lanjut</a></li>
                 </ul>
             </div>
         </section>
 
         <!-- Section -->
-        <section>
+        <section id="form">
             <header>
-                <h2>Get in touch</h2>
+                <h2>Hitung Takaran Gizi Harian Anda</h2>
             </header>
             <div class="content">
                 <p>
-                    <strong>Auctor commodo</strong> interdum et malesuada fames ac ante
-                    ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
-                    dolor mattis sagittis.
+                    <strong>Masukkan informasi berikut untuk menghitung takaran gizi harian Anda:</strong>
                 </p>
                 <form id="myForm">
                     @csrf
