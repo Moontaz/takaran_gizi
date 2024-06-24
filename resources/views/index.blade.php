@@ -173,7 +173,7 @@
             </header>
             <div class="content">
                 <p>
-                    <strong>Masukkan informasi berikut untuk menghitung takaran gizi harian Anda:</strong>
+                    <strong>Silahkan isi data pada form di bawah untuk menghitung kebutuhan gizi harian anda:</strong>
                 </p>
                 <form id="myForm">
                     @csrf
