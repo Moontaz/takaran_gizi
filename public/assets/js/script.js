@@ -127,9 +127,10 @@ function validateForm() {
 }
 
 function showAlert(type, message) {
-    var alertHTML = '<div class="alert alert-' + type + ' alert-dismissible fade show" role="alert">' +
-        "<strong>" + message + "</strong>" + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
-        "</div>";
+    var alertHTML = '<div class="alert alert-' + type + ' alert-dismissible fade show" style="padding-top: 10px; padding-bottom: 10px;" role="alert">' +
+        '<strong>' + message + '</strong>' + 
+        '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+        '</div>';
 
     document.getElementById("alert-container").innerHTML = alertHTML;
 
