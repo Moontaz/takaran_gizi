@@ -481,7 +481,7 @@
             var csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://127.0.0.1:8000/find", true);
+            xhr.open("POST", "/find", true);
             xhr.setRequestHeader("X-CSRF-TOKEN", csrfToken);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
