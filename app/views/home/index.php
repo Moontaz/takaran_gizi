@@ -562,7 +562,6 @@
 
       function submitForm() {
          if (!validateForm()) {
-            showAlert("danger", "Isi form terlebih dahulu.");
             return;
          }
          var usia = document.getElementById("usia").value;
