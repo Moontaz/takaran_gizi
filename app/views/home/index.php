@@ -22,7 +22,7 @@
             <h1>Takaran Gizi</h1>
             <br />
             <p>
-               A site to know your daily needs <br />by
+               Halaman Website untuk mengetahui kebutuhan gizi harianmu <br />by
                <a href="https://github.com/Moontaz" target="_blank">Moongo</a> /
                <a href="https://github.com/lebefriedlich" target="_blank">lebefriedlich</a>
             </p>
@@ -52,34 +52,7 @@
                ubahlah pola pikir Anda dan cobalah resep baru untuk menikmati
                makanan sehat yang memuaskan.
             </p>
-            <span class="image main"><img src="<?= BASEURL; ?>/images/pic02.jpg" alt="" /></span>
-         </div>
-      </section>
-
-      <!-- Section -->
-      <section>
-         <header>
-            <h2>Feugiat consequat tempus ultrices</h2>
-         </header>
-         <div class="content">
-            <p>
-               <strong>Etiam tristique libero</strong> eu nibh porttitor amet
-               fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies
-               condimentum.
-            </p>
-            <ul class="feature-icons">
-               <li class="icon solid fa-laptop">Consequat tempus</li>
-               <li class="icon solid fa-bolt">Etiam adipiscing</li>
-               <li class="icon solid fa-signal">Libero nullam</li>
-               <li class="icon solid fa-cog">Blandit condimentum</li>
-               <li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-               <li class="icon solid fa-code">Nibh amet venenatis</li>
-            </ul>
-            <p>
-               Vehicula ultrices sed ultricies condimentum. Magna sed etiam
-               consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et
-               dolor libero, feugiat magna tempus, sed et lorem adipiscing.
-            </p>
+            <span class="image main"><img src="<?= BASEURL; ?><?= BASEURL; ?>/images/pic02.jpg" alt="" /></span>
          </div>
       </section>
 
@@ -110,10 +83,9 @@
                </header>
                <div class="content">
                   <div class="gallery">
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/01.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/01.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/02.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/02.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/03.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/03.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/04.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/04.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/nutrition01.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/nutrition01.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/nutrition02.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/nutrition02.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/nutrition03.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/nutrition03.jpg" alt="" /></a>
                   </div>
                </div>
             </section>
@@ -133,9 +105,9 @@
                </header>
                <div class="content">
                   <div class="gallery">
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/05.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/05.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/06.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/06.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/07.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/07.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/vitamin01.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/vitamin01.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/vitamin02.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/vitamin02.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/vitamin03.jpg"><img src="<?= BASEURL; ?>/images/gallery/thumbs/vitamin03.jpg" alt="" /></a>
                   </div>
                </div>
             </section>
@@ -155,9 +127,9 @@
                </header>
                <div class="content">
                   <div class="gallery">
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/08.jpg" class="portrait"><img src="<?= BASEURL; ?>/images/gallery/thumbs/08.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/09.jpg" class="portrait"><img src="<?= BASEURL; ?>/images/gallery/thumbs/09.jpg" alt="" /></a>
-                     <a href="<?= BASEURL; ?>/images/gallery/fulls/10.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/10.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/mineral03.jpg" class="portrait"><img src="<?= BASEURL; ?>/images/gallery/thumbs/mineral03.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/mineral02.jpg" class="portrait"><img src="<?= BASEURL; ?>/images/gallery/thumbs/mineral02.jpg" alt="" /></a>
+                     <a href="<?= BASEURL; ?>/images/gallery/fulls/mineral01.jpg" class="landscape"><img src="<?= BASEURL; ?>/images/gallery/thumbs/mineral01.jpg" alt="" /></a>
                   </div>
                </div>
             </section>
@@ -172,26 +144,26 @@
          <div class="content">
             <p>
                Data yang kami gunakan berasal dari pemerintah melalui Kementerian Kesehatan yang dituangkan
-               pada <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019" class="text-decoration-underline" target="_blank"><strong>Permenkes No. 28 Tahun 2019</strong></a>.
+               pada <a href="https://peraturan.bpk.go.id/Details/138621/permenkes-no-28-tahun-2019" class="text-decoration-underline" target="_blank"><strong>Permenkes No. 28 Tahun
+                     2019</strong></a>.
             </p>
             <ul class="actions">
-               <li><a href="#" class="button primary large">Get Started</a></li>
-               <li><a href="#" class="button large">Learn More</a></li>
+               <li><a href="#form" class="button primary large">Mulai Sekarang</a></li>
+               <li><a href="#first" class="button large">Pelajari Lebih Lanjut</a></li>
             </ul>
          </div>
       </section>
 
       <!-- Section -->
-      <section>
+      <section id="form">
          <header>
-            <h2>Get in touch</h2>
+            <h2>Hitung Takaran Gizi Harian Anda</h2>
          </header>
          <div class="content">
             <p>
-               <strong>Auctor commodo</strong> interdum et malesuada fames ac ante
-               ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
-               dolor mattis sagittis.
+               <strong>Silahkan isi data pada form di bawah untuk menghitung kebutuhan gizi harian anda:</strong>
             </p>
+            <div id="alert-container"></div>
             <form id="myForm">
                <label for="usia" class="col-sm-2 col-form-label">Usia</label>
                <div class="fields">
@@ -209,7 +181,7 @@
                   <label for="gender" class="">Jenis Kelamin</label>
                   <div class="field">
                      <select class="" size="1" id="gender" name="gender" required>
-                        <option selected>-</option>
+                        <option value="-" selected>-</option>
                         <option value="laki-laki">Laki-laki</option>
                         <option value="perempuan">Perempuan</option>
                      </select>
@@ -220,7 +192,7 @@
                   <div class="field half mt-4" id="umurHamilOrMenyusui"></div>
                </div>
                <div class="">
-                  <button type="button" id="disabledInput" class="button primary large" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="submitForm()">
+                  <button type="button" id="submitBtn" class="button primary large" onclick="submitForm()">
                      Submit
                   </button>
                </div>
@@ -451,9 +423,148 @@
    </script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
    </script>
-   <script src="<?= BASEURL; ?>/assets/js/script.js"></script>
    <script>
+      document.getElementById("gender").addEventListener("change", function() {
+         var gender = this.value;
+         var hamilOrMenyusuiDiv = document.getElementById("hamilOrMenyusui");
+         var umurHamilOrMenyusuiDiv = document.getElementById("umurHamilOrMenyusui");
+
+         if (gender === "-") {
+            hamilOrMenyusuiDiv.innerHTML = "";
+            umurHamilOrMenyusuiDiv.innerHTML = "";
+         } else if (gender === "laki-laki") {
+            hamilOrMenyusuiDiv.innerHTML = "";
+            umurHamilOrMenyusuiDiv.innerHTML = "";
+         } else if (gender === "perempuan") {
+            hamilOrMenyusuiDiv.innerHTML = `
+      <label>Kondisi Khusus</label>
+        <div class="field half">
+          <div class="field half">
+            <input class="" type="radio" name="kondisiKhusus" id="inlineRadio1" value="tidak-keduanya" />
+            <label class="" for="inlineRadio1">Tidak Keduanya</label>
+          </div>
+          <div class="field half">
+            <input class="" type="radio" name="kondisiKhusus" id="inlineRadio2" value="hamil" />
+            <label class="" for="inlineRadio2">Hamil</label>
+          </div>
+          <div class="field half">
+            <input class="" type="radio" name="kondisiKhusus" id="inlineRadio3" value="menyusui" />
+            <label class="" for="inlineRadio3">Menyusui</label>
+          </div>
+        </div>
+`;
+         }
+      });
+
+      document
+         .getElementById("hamilOrMenyusui")
+         .addEventListener("change", function() {
+            var form = document.getElementById("myForm");
+            var hamilMenyusui = form.querySelector(
+               'input[name="kondisiKhusus"]:checked'
+            ).value;
+            var umurHamilOrMenyusuiDiv = document.getElementById("umurHamilOrMenyusui");
+            var umurText = hamilMenyusui === "hamil" ? "Umur Hamil" : "Umur Menyusui";
+
+            if (hamilMenyusui === "tidak-keduanya") {
+               umurHamilOrMenyusuiDiv.innerHTML = "";
+            } else if (hamilMenyusui === "hamil") {
+               umurHamilOrMenyusuiDiv.innerHTML = `
+          <label class="">${umurText}</label>
+          <div class="field half">
+              <div class="">
+                  <input class="" type="radio" name="umurHamilOrMenyusui" id="trimester1" value="2" />
+                  <label class="" for="trimester1">Trimester I</label>
+              </div>
+              <div class="">
+                  <input class="" type="radio" name="umurHamilOrMenyusui" id="trimester2" value="5" />
+                  <label class="" for="trimester2">Trimester II</label>
+              </div>
+              <div class="">
+                  <input class="" type="radio" name="umurHamilOrMenyusui" id="trimester3" value="8" />
+                  <label class="" for="trimester3">Trimester III</label>
+              </div>
+          </div>
+      `;
+            } else {
+               umurHamilOrMenyusuiDiv.innerHTML = `
+          <label class="">${umurText}</label>
+          <div class="field half">
+              <div class="">
+                  <input class="" type="radio" name="umurHamilOrMenyusui" id="semester1" value="5" />
+                  <label class="" for="semester1">6 Bulan Pertama</label>
+              </div>
+              <div class="">
+                  <input class="" type="radio" name="umurHamilOrMenyusui" id="semester2" value="8" />
+                  <label class="" for="semester2">6 Bulan Kedua</label>
+              </div>
+          </div>
+      `;
+            }
+         });
+
+      function validateForm() {
+         var usia = document.getElementById("usia").value;
+         var gender = document.getElementById("gender").value;
+
+         if (!usia) {
+            showAlert("danger", "Usia Wajib Diisi.");
+            return false;
+         }
+
+         if (isNaN(usia)) {
+            showAlert("danger", "Usia harus berupa angka.");
+            return false;
+         }
+
+         if (gender === "-") {
+            showAlert("danger", "Jenis Kelamin Wajib Diisi.");
+            return false;
+         }
+
+         if (gender === "perempuan") {
+            var kondisiKhusus = document.querySelector(
+               'input[name="kondisiKhusus"]:checked'
+            );
+            if (!kondisiKhusus) {
+               showAlert("danger", "Kondisi Khusus Wajib Diisi.");
+               return false;
+            }
+
+            if (kondisiKhusus.value !== "tidak-keduanya") {
+               var umurText =
+                  kondisiKhusus.value === "hamil" ?
+                  "Umur Hamil" :
+                  "Umur Menyusui";
+               var umurHamilOrMenyusui = document.querySelector(
+                  'input[name="umurHamilOrMenyusui"]:checked'
+               );
+               if (!umurHamilOrMenyusui) {
+                  showAlert("danger", umurText + " Wajib Diisi.");
+                  return false;
+               }
+            }
+         }
+
+         return true;
+      }
+
+      function showAlert(type, message) {
+         var alertHTML = '<div class="alert alert-' + type + ' alert-dismissible fade show" style="padding-top: 10px; padding-bottom: 10px;" role="alert">' +
+            '<strong>' + message + '</strong>' +
+            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+            '</div>';
+
+         document.getElementById("alert-container").innerHTML = alertHTML;
+
+         $(".alert").alert();
+      }
+
       function submitForm() {
+         if (!validateForm()) {
+            showAlert("danger", "Isi form terlebih dahulu.");
+            return;
+         }
          var usia = document.getElementById("usia").value;
          var tahunOrBulan = document.getElementById("tahunOrBulan").value;
          var gender = document.getElementById("gender").value;
@@ -486,7 +597,6 @@
                if (xhr.status === 200) {
                   try {
                      var responseData = JSON.parse(xhr.responseText);
-                     console.log(responseData);
                      // tabel 1
                      document.getElementById("energi").innerText =
                         responseData.tabel1.energi + " kkal";
@@ -564,8 +674,7 @@
                         responseData.tabel3.selenium + " mcg";
                      document.getElementById("mangan").innerText =
                         responseData.tabel3.mangan + " mg";
-
-                     console.log(responseData);
+                     $("#staticBackdrop").modal("show");
                   } catch (error) {
                      console.error("Error parsing JSON:", error);
                   }
